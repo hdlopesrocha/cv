@@ -1,0 +1,245 @@
+%!TEX TS-program = xelatex
+\documentclass[]{friggeri-cv}
+\addbibresource{bibliography.bib}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\definecolor{pblue}{rgb}{0.13,0.13,1}
+\definecolor{pgreen}{rgb}{0,0.5,0}
+\definecolor{pred}{rgb}{0.9,0,0}
+\definecolor{pgrey}{rgb}{0.46,0.45,0.48}
+
+\lstset{language=Java,
+  showspaces=false,
+  showtabs=false,
+  breaklines=true,
+  showstringspaces=false,
+  breakatwhitespace=true,
+  commentstyle=\color{pgreen},
+  keywordstyle=\color{pblue},
+  stringstyle=\color{pred},
+  basicstyle=\ttfamily
+}
+
+\begin{document}
+\header{Henrique}{Rocha}
+       {Telecommunications and Informatics}
+
+% In the aside, each new line forces a line break
+\begin{aside}
+  \section{about}
+    Henrique Duarte Lopes Rocha
+    ~
+    01210 Ferney-Voltaire
+    France
+    ~
+    (+351) 938781922
+    ~
+    \href{mailto:hdlopesrocha91@gmail.com}{hdlopesrocha91@gmail.com}
+    \href{http://web.ist.utl.pt/ist168621}{WebSite}
+    \href{http://www.youtube.com/user/hdlopesrocha}{YouTube}
+  \section{languages}
+    portuguese (native)
+    english (fluent)
+    french (A2.1)
+  \section{programming}
+    {\color{red} $\varheartsuit$} Java
+	(Android, PlayFramework, SpringBoot, LWJGL, MapReduce, GWT, AWS, JavaFX, Kurento Media Server, Jetty and Jersey), 
+	{\color{yellow} $\varheartsuit$} Angular, C, C++ (OpenGL), C\# (XNA, Windows Forms, WPF, lpsolve), Grails, VB, Python, Scala, Scheme, 
+	HTML, CSS (Bootstrap), JavaScript (jQuery, AJAX, WebGL, WebRTC), PHP (Wordpress), GLSL, HLSL.
+\section{databases}
+	DynamoDB, {\color{green} $\varheartsuit$} MongoDB, MySQL, Oracle, Neo4j, PostgreSQL, SQLite.
+   \section{soft skills}
+	Time Management
+	Problem-Solving
+	Team Player
+	Self Confidence
+	Adaptability
+\end{aside}
+
+
+
+\section{experience}
+	\subsection{European Organization for Nuclear Research (CERN)}  
+		\begin{entrylist}
+
+			\entry
+			{06 2018\\(ongoing)}
+			{Full-Stack and Database development}
+			{IMPACT}
+			{\emph{Maintenance and optimization of an intervention management, planning and coordination tool. Experience with \underline{Grails} and \underline{HazelCast} (distributed cache)} }
+
+			\entry
+			{01 2018\\(6 months)}
+			{Full-Stack and Mobile Development}
+			{DigiWare}
+			{\emph{Development of a work delivery tool for a warehouse at CERN. Experience with \underline{SpringBoot}, \underline{Ionic Framework}, \underline{Angular} and \underline{Hibernate} (with Oracle DB) } }
+
+			\entry
+			{10 2017\\(2 months)}
+			{Front-end development and Business Intelligence}
+			{APT}
+			{\emph{Maintenance and front-end development of a cost analysis tool for CERN activities. Experience with \underline{Grails}, \underline{GWT} and \underline{Pentaho} } }
+
+			\entry
+			{12 2016\\(ongoing)}
+			{Applications Development}
+			{PLAN}
+			{\emph{Development and support for a planning tool for CERN activities. Experience with \underline{SpringBoot}, \underline{Handlebars}, \underline{Hibernate} (with Oracle DB). Used \underline{Event Sourcing (ES)} and \underline{Command Query Responsibility Segregation (CQRS)} design patterns. } }
+
+			\entry
+			{10 2016\\(2 months)}
+			{Full-Stack Development}
+			{PM-Support calendar}
+			{\emph{Maintenance of a calendar application for support time management. Experience with \underline{SpringBoot} (integration with \underline{JIRA}), \underline{Thymeleaf} and \underline{Polymer}}}
+
+
+		\end{entrylist}
+
+	\subsection{Bullray-CIT}  
+		\begin{entrylist}
+			\entry
+			{01 2016\\(7 months)}
+			{Applications Development}
+			{}			
+			{\emph{Development of a user interface for a bank's security device that is synchronized with servers. Micro-controller sensors information receival through \underline{USB} (\underline{org.usb4java}), user interface with \underline{JavaFX} and network camera discovery through nmap (using \underline{org.nmap4j}) } }
+
+			\entry
+			{11 2015\\(2 months)}
+			{Android Development}
+			{}
+			{\emph{Optimization and bug resolution of an \underline{Android} application that uploads GPS, camera and microphone data in background.}}
+
+
+			\entry
+			{08 2015\\(2 months)}
+			{Systems Development}
+			{}
+			{\emph{Development and configuration of a streaming server that supports receiving and recording video from authenticated users. I tried \underline{FFServer}, \underline{nginx with rtmp module} and \underline{Wowza Streaming Server}, the final decision was \underline{Kurento Media Server} with \underline{WebRTC}. }}
+
+			\entry
+			{02 2015\\(20 months)}
+			{Full-Stack Web Development}
+			{}
+			{\emph{Development of a solution for a generic incident handling server, support for real time monitoring through \underline{WebSockets}. Experience with \underline{PlayFramework}, \underline{MongoDB} (with the official Java Driver), \underline{Maven}, \underline{jQuery} and \underline{Bootstrap}.}}
+
+			\entry
+			{11 2014\\(4 months)}
+			{Full-Stack Web Development}
+			{}
+			{\emph{Development of an architecture for a chat application. Experience with \underline{Android}, \underline{PlayFramework}, \underline{MongoDB} (with Morphia), \underline{jQuery} and \underline{Bootstrap}. Message synchronization through HTTP long polling.}}
+			
+	
+		\end{entrylist}
+\newpage
+	\subsection{IST}  
+		\begin{entrylist}
+
+			\entry
+			{03 2015\\(1 year)}
+			{Master Thesis \\\href{https://www.youtube.com/watch?v=TWfbcBKbseA}{watch it}}
+			{IST}
+			{\emph{Development of an interactive multi user video chat that supports recording, content overlay and a collaborative text editor. Used \underline{Kurento Media Server} for mixing streams into a single one and detecting QR codes. Experience with \underline{ot.js} for operation transformations (collaborative component). Other libraries used, \underline{jquery.qrcode}, \underline{vis.js}, \underline{bootstrap-typeahead}, \underline{codemirror.js} and \underline{adapter.js} }. Little experience with \underline{strophe.js} for communication between web browsers and \underline{XMPP} servers. }
+			
+			\entry
+			{04 2014\\(6 months)}
+			{Scientific Initiation Scholarship}
+			{INESC}
+			{\emph{Frontend Development for Provide Results's Bimk project. Experience with \underline{PlayFramework}, \underline{Revit API} and \underline{GIT}.}}
+			
+			\entry
+			{09 2013\\(6 months)}
+			{Scientific Initiation Scholarship}
+			{CEG-IST}
+			{\emph{Programming a Decision Analysis Software (MACBETH) with \underline{WPF}. Development of an algorithm to suggest judgements based on past decisions using \underline{lpsolve}.}}
+
+		\end{entrylist}
+
+\subsection{Other}  
+	\begin{entrylist}
+
+		\entry
+		{08 2013\\(2 weeks)}
+		{Summer Work}
+		{LCG}
+		{\emph{Frontend development for a Decision Analysis Software using \underline{ASP.NET}. }}
+		\entry
+		{11 2012}
+		{Pizza Night Competition}
+		{Microsoft Lisbon Experience}
+		{\emph{2º place on Windows Phone Category} with \emph{Infinity Edge} game.}
+		\entry
+		{08 2006\\(1 month)}
+		{Garbage Collector}
+		{Jovens em Movimento, Oeiras}
+		{Cleaning and maintenance of public spaces.}
+
+
+		\end{entrylist}
+
+\section{education}
+
+\begin{entrylist}
+   \entry
+    {2013–2016}
+    {Master of Science}
+    {Instituto Superior Técnico - Taguspark}
+    {Telecommunications and Informatics Engineering (Final Grade: 16 in 20)}
+   \entry
+    {2009–2014}
+    {Bachelor of Science}
+    {Instituto Superior Técnico - Taguspark}
+    {Communication Networks Engineering (Final Grade: 13.2 in 20)}
+
+\end{entrylist}
+
+
+
+\section{applications}
+
+\begin{entrylist}
+  
+  \entry
+    {2015}
+    {Bomb Raider}
+    {\href{http://play.google.com/store/apps/details?id=pt.ist.bombraider}{Google Play}}
+    {Bomb Raider is a simple singleplayer and multiplayer game where the goal is destroying all enemies in the map. I used \underline{OpenGLES} and \underline{WiFi-Direct} to develop this \underline{Android} game.}
+
+  \entry
+    {2013}
+    {OpenGlobe}
+    {\href{http://web.ist.utl.pt/ist168621/?page=10}{Instituto Superior Técnico}}
+    {Modeling Earth surface with GPS devices and topographic collected data. It is also possible to predict satellites position through ephemeris data.}
+
+  \entry
+    {2012}
+    {Infinity Edge (Windows Phone 7)}
+    {\href{http://www.windowsphone.com/en-us/store/app/infinity-edge/05516463-3a89-4351-996e-62e5b4519aeb}{windows marketplace}}
+    {First Person Shooter with spaceships made on my free time. I had experience with \underline{XNA} and \underline{HLSL}.}
+
+  \entry
+    {2011}
+    {Era of Empires}
+    {\href{http://web.ist.utl.pt/ist168621/?page=8}{Personal Project}}
+    {3D environment generator and Real Time Strategy game engine using \underline{OpenGL}.}
+
+
+\end{entrylist}
+
+\section{interests}
+    3D Studio Max, Photoshop, Game Development, Web Design, Network Security, Jogging, Kayaking, Karate and Yoga.
+
+
+%\newpage
+%\section{grades}
+%\subsection{Bachelor - Communication Networks Engineering}
+%\input{grades_bachelor.tex}
+%\subsection{Master - Telecommunications and Informatics Engineering}
+%\input{grades_master.tex}
+
+
+\begin{lstlisting}
+return 0;
+\end{lstlisting}
+\end{document}
